@@ -1,0 +1,2 @@
+<!--moduleB/pages/visit/visit.wxml-->
+<view class="a"><image src="/images/a.jpg"></image></view>

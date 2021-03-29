@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/guidedTour/guidedTour",
+    "pages/reservation/reservation",
+    "pages/museum/museum"
+  ],
+  "subpackages": [
+    {
+      "root": "moduleA",
+      "pages": [
+        "pages/jianjie/jianjie",
+        "pages/weiz/weiz",
+        "pages/xuanc/xuanc",
+        "pages/guanw/guanw"
+      ]
+    },
+    {
+      "root": "moduleB",
+      "pages": [
+        "pages/visit/visit"
+      ]
+    },
+    {
+      "root": "moduleC",
+      "pages": [
+        "pages/pageDetail/pageDetail"
+      ]
+    }
+    
+  ],
+  
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "曾品堂",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#4FC04E",
+    "list": [
+      {
+        "pagePath": "pages/museum/museum",
+        "text": "博物馆",
+        "iconPath": "images/museum.png",
+        "selectedIconPath": "images/museum2.png"
+      },
+      {
+        "pagePath": "pages/reservation/reservation",
+        "text": "预约服务",
+        "iconPath": "images/reservation.png",
+        "selectedIconPath": "images/reservation2.png"
+      },
+      {
+        "pagePath": "pages/guidedTour/guidedTour",
+        "text": "语音导览",
+        "iconPath": "images/guidedTour.png",
+        "selectedIconPath": "images/guidedTour2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap63.json",
+  
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  }
+}

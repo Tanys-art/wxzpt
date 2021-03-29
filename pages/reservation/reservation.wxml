@@ -1,0 +1,143 @@
+<!--pages/reservation.wxml-->
+<view class="box">
+    <view class="box-img">
+        <image src="/images/a.jpg"></image>
+    </view>
+
+    <l-card type="primary" plaintext="{{true}}" title="2021年3月11日">
+        <view class="content">
+            <text>
+                门票销售截止时间为 15:30
+                门票入院截止时间为 15:40
+            </text>
+        </view>
+    </l-card>
+    <l-card type="primary" plaintext="{{true}}" title="购票须知">
+        <view class="content1">
+            <text>
+                博物馆实行实名制/检票，购票观众满足一下实名要求：
+                1、国内观众须携带身份证或户口本原件
+                2、国外观众须携带护照原件
+            </text>
+        </view>
+    </l-card>
+    <l-card type="primary" plaintext="{{true}}" title="">
+        <view class="content2">
+            <block>
+                <picker disabled="{{false}}" mode="date" value="{{reservationTime}}" bindchange="bindTimeChange">
+                    <view class="picker">
+                        <l-button size="large" shape="semicircle" width="635" checked="{{show}}"
+                            data-mes="hello">预约
+                        </l-button>
+                    </view>
+                </picker>
+            </block>
+            <!-- <l-popup content-align="center" show="{{flag}}" id="tanchu"> 
+                            <view class="botton"> 
+                                <view class="section">
+                        <view class="section__title">日期选择器</view>
+                        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                            <view class="picker">
+                            当前选择: {{date}}
+                            </view>
+                        </picker>
+                        </view>
+                            </view>
+                </l-popup> -->
+        </view>
+        <view class="content4">
+            <l-button size="large" shape="semicircle" plain="{{true}}" width="635" bindtap="findHistoryMsg">查看历史预约/取消预约</l-button>
+        </view>
+    </l-card>
+    <view class="content5">
+        <l-card type="primary" plaintext="{{true}}" title="">
+            <l-collapse>
+                <l-collapse-item title="票务优惠政策，点击查看" text-align="center">
+                    <text>
+                        票务政策
+
+                        1.门票价格：
+
+                        （1）每年4月1日至10月31日为旺季，大门票60元/人；
+
+                        （2）每年11月1日至次年3月31日为淡季，大门票40元/人。
+
+
+                        2.主开放区优惠政策：
+
+                        （1）大、中、小学生（含港、澳、台学生,不含成人教育、研究生），凭学生证或学校介绍信，可购学生票。
+
+                        （2）6周岁（不含6周岁）至18周岁（含18周岁）未成年人，可凭身份证、户口本或护照购买学生票。
+
+                        （3）60岁以上（含60岁）老年人凭身份证原件，门票半价优惠。
+
+                        （4）持有本市社会保障金领取证的人员，门票半价优惠。
+
+                        （5）离休干部凭离休证，免票参观。
+
+                        （6）6周岁（含6周岁）以下或身高1.2米（含1.2米）以下儿童免票参观。
+
+                        （7）残疾人凭残疾人证件，免票参观。
+
+                        （8）“三八”妇女节，妇女享受门票半价优惠。
+
+                        （9）“六一”儿童节，14周岁以下儿童（含14周岁），免费参观。随同家长一人享受半价优惠 。
+
+                        （10）“八一”建军节，现役军人、武警（含消防救援人员）凭有效证件，免费参观。
+
+
+                        购票说明
+
+                        1、购票实行实名制，所有观众需录入身份信息方可预定。
+
+                        2、每个有效证件每个入院日限购一张门票。
+
+                        3、个人用户每单限购10张门票，超过10张须分别下单。
+
+                        退票说明：
+
+                        1、预售门票在未使用的情况下，可于预约参观日当天下午20点前在本平台申请退款，超过时限则无法退款。
+
+                        2、退款会在您预约入院日之后的5日内执行，如果您届时尚未收到退款，请致电客服咨询。
+
+                        验票说明：
+
+                        1、下单时填写了二代身份证号或护照的观众可在入院日当日持身份证、户口本原件或护照在任意检票口直接入院，无须兑换纸质门票。
+
+                        2、下单时填写了港澳台有效身份证件（港澳居民来往内地通行证、台胞证、港澳台居民居住证）的观众可在入院日当日持证件原件在任意检票口直接入院，无须兑换纸质门票。
+
+                        3、参观当天，因证件丢失、损坏或其他情况导致无法验票的观众，可凭其他有效证件（户口本、驾驶证等标有证件号的证件）在任意检票口直接入院，无须兑换纸质门票。
+
+                        参观时间：
+
+                        旺季4月1日至10月31日：
+
+                        售票时间 8:30止票时间 16:00
+
+                        停止入院 16:10闭馆时间 17:00
+
+                        淡季11月1日至次年3月31日：
+
+                        售票时间 8:30止票时间 15:30
+
+                        停止入院 15:40闭馆时间 16:30
+
+                        除法定节假日，博物院全年实行周一闭馆。
+
+                        客服服务时间：
+
+                        旺季（每年4月1日至10月31日）8:30-16:15
+
+                        淡季（每年11月1日至次年3月31日）8:30-15:45
+
+                        注：除法定节假日，博物院全年实行周一闭馆，闭馆期间不提供服务。
+
+                    </text>
+                </l-collapse-item>
+            </l-collapse>
+        </l-card>
+    </view>
+    <view class="btm">
+        江西陈老香实业有限公司 版权所有@2018
+    </view>
+</view>

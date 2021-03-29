@@ -1,0 +1,46 @@
+/* pages/reservation.wxss */
+.box{
+  background-color: #F3ECE4;
+  height: 1850rpx;
+  font-size: 35rpx;
+}
+.box-img image{
+  height: 400rpx;
+  margin-bottom: 30rpx;
+}
+.content{
+  margin-bottom: 50rpx;
+}
+.content1{
+  margin-bottom: 50rpx;
+}
+.content2{
+  margin-top: 80rpx;
+  margin-bottom: 40rpx;
+}
+.content3{
+  margin-bottom: 40rpx;
+}
+.content4{
+  margin-bottom: 50rpx;
+}
+.content5{
+  margin-top: 30rpx;
+  background-color: #F3ECE4;
+}
+.btm{
+  padding-top: 100rpx;
+  height: 60rpx;
+  font-size: 20rpx;
+  color: grey;
+  text-align: center;
+  background-color: #F3ECE4;
+}
+
+.botton{
+  color: red;
+  height: 600rpx;
+  width: 700rpx;
+  background-color: #fff;
+
+}

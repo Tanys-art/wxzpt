@@ -1,0 +1,2 @@
+<!--moduleA/pages/jianjie/jianjie.wxml-->
+<image src="/images/jianjie.jpg" mode="widthFix" width="100%" bindtap="viewImage"></image>

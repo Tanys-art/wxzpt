@@ -1,0 +1,50 @@
+<!--moduleA/pages/xuanc/xuanc.wxml-->
+
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{false}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"><image src="/images/a.jpg"></image></view>
+          </swiper-item>
+          <swiper-item>
+            <view class="swiper-item {{item}}"><image src="/images/b.jpg"></image></view>
+          </swiper-item>
+          <swiper-item>
+            <view class="swiper-item {{item}}"><image src="/images/c.jpg"></image></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view>
+    <i-tabs current="{{ current }}" color="#f759ab" bindchange="handleChange">
+    <i-tab key="tab1" title="选项1"></i-tab>
+    <i-tab key="tab2" title="选项2"></i-tab>
+    <i-tab key="tab3" title="选项3"></i-tab>
+</i-tabs>
+  </view>
+  <view class="list-card">
+    <i-card title="民国场景" extra="额外内容" full="true">
+      <view slot="content">为曾品堂老酒博物馆四大场景之首。本场景中的民国自行车，是当时用来卖散酒的工具。民国年间，瓶装酒是富豪的饮品，寻常百姓通常打散酒来喝。除此之外，本场景辅以民国的老家具及宣传画，是对该时期人们生活场景的生动再现。</view>
+      <view slot="footer">四大场景</view>
+    </i-card>
+    <i-card title="赣鄱场景" extra="额外内容" full="true">
+      <view slot="content">江西物华天宝，人杰地灵，该幅立体壁画还原了江西旧时某酿酒坊的场景，早期的酒坊通常设在码头或港口等交通要道。画面上的酿酒坊旁边有稻田，远处还有河流，整幅画体现了江南赣派的建筑风格，场景内谷仓的设置，体现出江西仓丰廪实，酒美醪香的地域特色。</view>
+      <view slot="footer">四大场景</view>
+    </i-card>
+    <i-card title="文革场景" extra="额外内容" full="true">
+      <view slot="content">是曾品堂老酒博物馆的第二大场景。本场景主要呈现了上世纪七八十年代人们的生活风貌，其中大量使用的老家具和生活物件将人们带回到记忆中的红色年代。此外，本场景中与麦田交相呼应的拖拉机，是时代的特征。在该时期的很多酒标签上，均有不少拖拉机图案。</view>
+      <view slot="footer">四大场景</view>
+    </i-card>
+    <i-card title="老北京场景" extra="额外内容" full="true">
+      <view slot="content">听戏，是老北京的主要娱乐方式。近代北京城中，上至朝廷、政府命官，下至黎民百姓均喜欢京剧。老北京场景是曾品堂营造的第四大场景：喝茶、听戏、品酒，重回老北京的慢节奏生活。</view>
+      <view slot="footer">四大场景</view>
+    </i-card>
+  </view>
+
+</view>
+

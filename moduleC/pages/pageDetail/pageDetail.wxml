@@ -1,0 +1,5 @@
+<!--moduleC/pages/pageDetail/pageDetail.wxml-->
+<view wx:for="{{list}}" wx:key="*this">
+  <view class="" wx:if="{{item[0]!='h'}}">{{item}}</view>
+  <view class="" wx:else><image src="{{item}}"></image></view>
+</view>

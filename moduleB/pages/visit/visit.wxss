@@ -1,0 +1,4 @@
+/* moduleB/pages/visit/visit.wxss */
+.a{
+  height: 300px;
+}

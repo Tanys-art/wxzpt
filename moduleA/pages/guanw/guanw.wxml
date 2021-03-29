@@ -1,0 +1,7 @@
+<!--moduleA/pages/guanw/guanw.wxml-->
+<view>复制以下链接在浏览器打开可进入官网</view>
+<text user-select="true">{{contents}}</text>
+<view bindtap='copyText' data-text="{{contents}}">
+  <button class="mini-btn" type="primary" size="mini">复制</button>
+</view>
+

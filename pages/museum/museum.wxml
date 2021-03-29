@@ -1,0 +1,34 @@
+<!--pages/museum.wxml-->
+<!-- <i-cell-group>
+    <i-cell title="博物馆简介" is-link url="/moduleA/pages/jianjie/jianjie"></i-cell>
+    <i-cell title="地理位置" is-link bind:click="positionShow"></i-cell>
+    <i-cell title="宣传片" is-link url="/moduleA/pages/xuanc/xuanc"></i-cell>
+    <i-cell title="博物馆官网" is-link url="/moduleA/pages/guanw/guanw"></i-cell>
+</i-cell-group> -->
+<view class="mC">
+    <l-search-bar placeholder="搜索" />
+    <view bindtap="positionShow">
+        <l-card  type="primary" 
+           l-img-class="right-card" 
+           position="left" 
+           title="地理位置"
+           full="true"
+           image="http://8470865.s21i.faiusr.com/4/ABUIABAEGAAgoNm17QUokPjgiQMwjQE4PA.png.webp">
+            <view class="content">
+            很简单，豆瓣现在这样就给大家指了一条明路...
+            </view>
+        </l-card>
+    </view>
+    <view>
+        <l-grid l-class="grid" show-border="{{true}}">
+            <l-grid-item wx:for="{{grids1}}" wx:key="{{index}}" key="{{index}}" slot="{{index}}">
+                <l-icon name="{{item.image}}" />
+                <view class="text">{{item.text}}</view>
+            </l-grid-item>
+        </l-grid>
+    </view>
+    <view>瀑布流</view>
+    <view wx:for="{{Pimage}}" wx:key="*this">
+        <image src="item"></image>
+    </view>
+</view>

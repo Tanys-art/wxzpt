@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-tabs": "/components/dist/tabs/index",
+    "i-tab": "/components/dist/tab/index"
+  }
+}
